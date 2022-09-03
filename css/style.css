@@ -576,6 +576,9 @@ h4,
   right: 0;
 }
 
+.form-group input:focus {
+  color: var(--text-black-900);
+}
 /* contact section */
 .contact-item {
   flex: 0 0 25%;
