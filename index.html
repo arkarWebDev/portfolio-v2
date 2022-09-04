@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="./css/theme-switcher.css" />
   </head>
   <body>
+    <div id="loader"></div>
     <div class="main">
       <div class="aside">
         <div class="logo">
@@ -665,7 +666,13 @@
         <span class="color-5" onclick="SetStyle('color-5')"></span>
       </div>
     </div>
-
+    
+    <script>
+      let loader = document.getElementById("loader");
+      window.addEventListener("load",_=>{
+        loader.style.display = "none";
+      })
+    </script>
     <script src="./js/jquery.min.js"></script>
     <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script
